@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Russo+One&display=swap');
+
+.body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(270deg, #06112B 0%, #06112B 28.11%, rgba(0, 0, 0, 0) 66.87%), 
+                url("/images/background.jpg") no-repeat -547px center;
+    background-size: cover;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    top: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Image{
+    width: 470px;
+    height: 80px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.formContainer {
+    position: relative; 
+    width: 786px;
+    height: 443px;
+    margin-right: 100px;
+    background: url("/images/formContainer.svg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 29px;
+    padding-right: 29px;
+    gap: 15px;
+}
+
+.title {
+    color: #FFFFFF;
+    font-family: 'Russo One', sans-serif;
+    -webkit-text-stroke: 1px black;
+    letter-spacing: 7px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: 7.1px;
+
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #328ADA;
+    color: white;
+    font-family: "Be Vietnam Pro", sans-serif;
+    padding-left: 12px;
+}
+
+.inputContainer input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #B6BBC3;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.inputContainer .icon {
+    font-size: 24px;
+    color: #93CEFA;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.submitButton {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 48px;
+    background: linear-gradient(135deg, #A9CEF3 0%, #6287B3 0.01%, #0E3366 42.44%, #164072 94.53%);
+    box-shadow: 0px 0px 5px 0px rgba(147, 187, 224, 1) inset;
+    border: 2px solid rgba(63, 119, 180, 1);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Russo One', sans-serif;
+    -webkit-text-stroke: 0.5px black;
+    clip-path: polygon(0 0, 100% 0, 87% 100%, 13% 100%);
+    transition: all 0.3s ease;
+    bottom: 17px; 
+    left: 69%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.69px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.forgotPassword {
+    color: #FFFFFF;
+    width: 100%;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Be Vietnam Pro", sans-serif;
+    -webkit-text-stroke: 0.2px black;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.checkboxContainer {
+    position: absolute;
+    bottom: 35px;
+    left: 25%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #FFFFFF;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.checkboxContainer input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    background: transparent;
+    border: 2px solid #328ADA;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+.checkboxContainer input[type="checkbox"]:checked {
+    background-color: #1065C6;
+  }
+  
+.checkboxContainer input[type="checkbox"]::after {
+    content: "✔";
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+.checkboxContainer input[type="checkbox"]:checked::after {
+    display: block;
+  }
+
+  .errorMessage{
+    color: #FF0000;
+    font-size: 12px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    margin-top: 3px;
+  }
+
+  @media (max-width: 1024px) {
+    .formContainer {
+        width: 500px;
+        height: 300px;
+        gap: 4px;
+        margin-right: 80px;
+    }
+
+    .form {
+        gap: 12px;
+    }
+    
+
+    .title {
+        font-size: 18px;
+        letter-spacing: 5px;    
+    }
+
+    .image {
+        position: absolute;
+        width: 100%;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Image{
+        width: 270px;
+        height: 60px;
+    }
+    
+    .submitButton {
+        width: 50%;
+        left: 70%;
+        height: 33px;
+        bottom: 10px; 
+        font-size: 15px;
+    }
+
+    .inputContainer {
+        height: 44px;
+        padding-left: 10px;
+    }
+
+    .inputContainer input {
+        flex: 1;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    
+    .forgotPassword {
+        font-size: 12px;
+    }
+    
+
+    .checkboxContainer {
+        bottom: 22px;
+        left: 25%;
+        font-size: 10px;
+    }
+
+    .checkboxContainer input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .errorMessage{
+        margin-top: 2px;
+      }
+    
+    
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        margin-right: 30px;
+    }
+
+   
+}
+
+
+
+  
+/* .separator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+} */
+
+/* .rectangleContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1; 
+    
+}
+
+.rectangle1 {
+    position: absolute;
+    bottom: 0;
+    width: 741px;
+    height: 369px;
+}
+
+.rectangle2 {
+    position: absolute;
+    bottom: -40px; 
+    right: 0;
+    width: 935px;
+    height: 437px;
+} */
+
+/* 
+.form {
+    width: 785.61px;
+    height: 442.71px;
+    margin-right: 100px;
+    background: linear-gradient(0deg, rgba(30, 30, 30, 0.1) 0.02%, #1065C6 100%);
+    border: 2px solid #1065C6;
+    clip-path: polygon(
+        0 20%, 
+        6% 10%, 
+        45% 10%, 
+        52% 0,
+        85% 0, 
+        100% 30%, 
+        100% 85%,
+        95% 85%,
+        85% 100%,
+        53% 100%,
+        42% 85%,
+        0 85%
+    );
+    box-sizing: border-box;
+}
+
+.form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #FFFFFF; 
+    clip-path: polygon(
+        0 20%, 
+        6% 10%, 
+        45% 10%, 
+        52% 0,
+        85% 0, 
+        100% 30%, 
+        100% 85%,
+        95% 85%,
+        85% 100%,
+        53% 100%,
+        42% 85%,
+        0 85%
+    );
+    box-sizing: border-box;
+    pointer-events: none;
+} */
