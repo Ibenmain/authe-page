@@ -272,7 +272,7 @@
 
     .formContainer {
         width: 400px;
-        height: 200px;
+        height: 250px;
         gap: 4px;
         margin: 8px;
     }
@@ -302,10 +302,10 @@
     }
     
     .submitButton {
-        width: 50%;
-        left: 70%;
-        height: 19px;
-        bottom: 5px; 
+        width: 53%;
+        left: 71%;
+        height: 25px;
+        bottom: 8px; 
         font-size: 10px;
     }
 
