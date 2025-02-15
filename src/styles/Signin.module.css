@@ -269,9 +269,77 @@
 }
 
 @media (max-width: 768px) {
+
     .formContainer {
-        margin-right: 30px;
+        width: 400px;
+        height: 200px;
+        gap: 4px;
+        margin: 8px;
     }
+
+    .form {
+        gap: 8px;
+    }
+    
+
+    .title {
+        font-size: 12px;
+        letter-spacing: 2px;    
+    }
+
+    .image {
+        position: absolute;
+        width: 100%;
+        top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Image{
+        width: 170px;
+        height: 40px;
+    }
+    
+    .submitButton {
+        width: 50%;
+        left: 70%;
+        height: 19px;
+        bottom: 5px; 
+        font-size: 10px;
+    }
+
+    .inputContainer {
+        height: 30px;
+        padding-left: 10px;
+    }
+
+    .inputContainer input {
+        flex: 1;
+        font-size: 10px;
+        padding-left: 8px;
+    }
+    
+    .forgotPassword {
+        font-size: 10px;
+    }
+    
+
+    .checkboxContainer {
+        bottom: 14px;
+        left: 25%;
+        font-size: 8px;
+    }
+
+    .checkboxContainer input[type="checkbox"] {
+        width: 8px;
+        height: 8px;
+    }
+
+    .errorMessage{
+        margin-top: 2px;
+      }
+    
 
    
 }
