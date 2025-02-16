@@ -54,10 +54,8 @@ const SignIn = () => {
               <input type="password" placeholder="Mot de passe" {...register("password")} />
             </div>
             {errors.password && <p className={styles.errorMessage}>{errors.password.message}</p>}
-            </div>
-
             <a href="#" className={styles.forgotPassword}>Mot de passe oublié</a>
-
+            </div>
             <div className={styles.checkboxContainer}>
               <input type="checkbox" id="rememberMe" {...register("rememberMe")} />
               <label htmlFor="rememberMe">Garder ma session active</label>
